@@ -57,7 +57,9 @@
     </ul>
 
     <main class="app-content">
-      <router-view />
+      <div class="app-page">
+        <router-view />
+      </div>
     </main>
 
     <div class="fixed-action-btn">
