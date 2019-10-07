@@ -5,7 +5,7 @@
         <a href="#" @click.prevent="$emit('burgerClick')">
           <i class="material-icons black-text">dehaze</i>
         </a>
-        <span class="black-text">12.12.12</span>
+        <span class="black-text">{{ date | date('datetime') }}</span>
       </div>
 
       <ul class="right hide-on-small-and-down">
@@ -41,17 +41,32 @@
 
 <script>
   export default {
+    data: () => ({
+      date: new Date(),
+      interval: null,
+      dropdown: null
+    }),
     methods: {
       logout() {
         console.log('Logout')
         this.$router.push('/login?message=logout')
       }
     },
-    mounted: function() {
+    mounted() {
       // refer to Materialize plugin
-      window.M.Dropdown.init(this.$refs.dropdown, {
+      this.dropdown = window.M.Dropdown.init(this.$refs.dropdown, {
         constrainWidth: false
       })
+
+      this.interval = setInterval(() => {
+        this.date = new Date()
+      }, 1000);
+    },
+    beforeDestroy() {
+      clearInterval(this.interval)
+      if (this.dropdown && this.dropdown.destroy) {
+        this.dropdown.destroy
+      }
     }
   };
 </script>
