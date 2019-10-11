@@ -5,6 +5,7 @@
         <a href="#" @click.prevent="$emit('burgerClick')">
           <i class="material-icons black-text">dehaze</i>
         </a>
+        <!-- if you need date only, pass to the filter 'date' -->
         <span class="black-text">{{ date | date('datetime') }}</span>
       </div>
 
@@ -64,6 +65,7 @@
     },
     beforeDestroy() {
       clearInterval(this.interval)
+
       if (this.dropdown && this.dropdown.destroy) {
         this.dropdown.destroy
       }
