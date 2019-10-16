@@ -100,7 +100,7 @@ export default {
     agree: {checked: v => v}
   },
   methods: {
-    submitHandler() {
+    async submitHandler() {
       if (this.$v.$invalid) { // if form completely invalid
         this.$v.$touch()      // this method activate validation
         return
@@ -112,8 +112,13 @@ export default {
         name: this.name
       }
 
-      console.log('formData', formData)
-      this.$router.push('/')
+      try {   
+        await this.$store.dispatch('register', formData) // await because this is async function
+        this.$router.push('/')
+      } catch (error) {
+        // without error handling
+      }
+
     }
   }
 }

@@ -48,8 +48,8 @@
       dropdown: null
     }),
     methods: {
-      logout() {
-        console.log('Logout')
+      async logout() {
+        await this.$store.dispatch('logout') // need wait promise
         this.$router.push('/login?message=logout')
       }
     },
