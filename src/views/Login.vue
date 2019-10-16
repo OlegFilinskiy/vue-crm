@@ -69,7 +69,7 @@ export default {
   }),
   validations: {
     email: {email, required},
-    password: {required, minLength: minLength(6)}
+    password: {required, minLength: minLength(6)} // indicate the number of characters
   },
   methods: {
     submitHandler() {
@@ -83,7 +83,8 @@ export default {
         password: this.password
       }
 
-      console.log(formData)
+      console.log('formData', formData)
+      this.$router.push('/')
     }
   }
 }

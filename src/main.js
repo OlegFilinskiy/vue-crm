@@ -10,7 +10,7 @@ import "materialize-css/dist/js/materialize.min"
 Vue.config.productionTip = false
 
 Vue.use(Vuelidate)
-Vue.filter("date", dateFilter)  // Filter registration
+Vue.filter("date", dateFilter)  // Registration of filter
 
 new Vue({
   router,

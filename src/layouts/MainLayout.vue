@@ -2,7 +2,7 @@
   <div class="app-main-layout">
     <Navbar @burgerClick="isOpen = !isOpen" />
 
-    <Sidebar v-model="isOpen" />
+    <Sidebar :open="isOpen" />
 
     <main class="app-content" :class="{full: !isOpen}">
       <div class="app-page">

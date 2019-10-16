@@ -1,5 +1,5 @@
 <template name="component-name">
-  <ul class="sidenav app-sidenav" :class="{ open: value }">
+  <ul class="sidenav app-sidenav" :class="{ open: open }">
     <router-link
       v-for="link in links"
       :key="link.url"
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  props: ["value"],
+  props: ["open"], // isOpen from MainLayout
   data: () => ({
     links: [
       { title: "Счет", url: "/", exact: true },
