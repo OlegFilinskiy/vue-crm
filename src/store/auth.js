@@ -6,6 +6,7 @@ export default {
       try {
         await firebase.auth().signInWithEmailAndPassword(email, password) // async method (return promise)
       } catch (error) {
+        commit('setError', error) // call mutation to create error
         throw error
       }
     },
@@ -21,6 +22,7 @@ export default {
           name
         }) // put to the database with initial bill and name (payload)
       } catch (error) {
+        commit('setError', error) // call mutation to create error
         throw error
       }
     },
