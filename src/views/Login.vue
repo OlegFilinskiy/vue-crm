@@ -78,7 +78,7 @@ export default {
     }
   },
   methods: {
-    submitHandler() {
+    async submitHandler() {
       if (this.$v.$invalid) { // if form completely invalid
         this.$v.$touch()      // this method activate validation
         return
@@ -89,8 +89,13 @@ export default {
         password: this.password
       }
 
-      console.log('formData', formData)
-      this.$router.push('/')
+      try {   
+        await this.$store.dispatch('login', formData) // await because this is async function
+        this.$router.push('/')
+      } catch (error) {
+        // without error handling
+      }
+
     }
   }
 }
