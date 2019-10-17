@@ -27,6 +27,11 @@ export default {
   data: () => ({
     isOpen: true
   }),
+  async mounted() {
+    if (!Object.keys(this.$store.getters.info).length) { // check if object empty
+      await this.$store.dispatch('fetchinfo')
+    }
+  },
   components: {
     Navbar,
     Sidebar
