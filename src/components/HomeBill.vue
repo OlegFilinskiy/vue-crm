@@ -8,7 +8,7 @@
           v-for="cur of currencies"
           :key="cur"
         >
-          <span>{{ getCurrency(cur) }}</span>
+          <span>{{ getCurrency(cur) | currency(cur) }}</span>
         </p>
       </div>
     </div>
