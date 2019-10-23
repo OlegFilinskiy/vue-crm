@@ -13,11 +13,15 @@
         <small 
           class="helper-text invalid"
           v-if="$v.email.$dirty && !$v.email.required"
-        >Поле Email не должно быть пустым</small>
+        >
+          Поле Email не должно быть пустым
+        </small>
         <small 
           class="helper-text invalid"
           v-else-if="$v.email.$dirty && !$v.email.email"
-        >Введите корректный Email</small>
+        >
+          Введите корректный Email
+        </small>
       </div>
       <div class="input-field">
         <input
@@ -30,11 +34,15 @@
         <small 
           class="helper-text invalid"
           v-if="$v.password.$dirty && !$v.password.required"
-        >Введите пароль</small>
+        >
+          Введите пароль
+        </small>
         <small 
           class="helper-text invalid"
           v-else-if="$v.password.$dirty && !$v.password.minLength"
-        >Пароль должен быть {{$v.password.$params.minLength.min}} Символов. Сейчас он {{password.length}}</small>
+        >
+          Пароль должен быть {{$v.password.$params.minLength.min}} Символов. Сейчас он {{password.length}}
+        </small>
       </div>
     </div>
     <div class="card-action">
