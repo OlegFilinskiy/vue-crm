@@ -54,8 +54,8 @@
 </template>
 
 <script>
-import { email, required, minLength } from "vuelidate/lib/validators";
-import messages from "@/utils/messages";
+import { email, required, minLength } from "vuelidate/lib/validators"
+import messages from "@/utils/messages"
 
 export default {
   name: "login",
@@ -70,29 +70,29 @@ export default {
   mounted() {
     if (messages[this.$route.query.message]) {
       // check, if our messages has this key
-      this.$message(messages[this.$route.query.message]); // show message from url query parameters
+      this.$message(messages[this.$route.query.message]) // show message from url query parameters
     }
   },
   methods: {
     async submitHandler() {
       if (this.$v.$invalid) {
         // if form completely invalid
-        this.$v.$touch(); // this method activate validation
-        return;
+        this.$v.$touch() // this method activate validation
+        return
       }
 
       const formData = {
         email: this.email,
         password: this.password
-      };
+      }
 
       try {
-        await this.$store.dispatch("login", formData); // await because this is async function
-        this.$router.push("/");
+        await this.$store.dispatch("login", formData) // await because this is async function
+        this.$router.push("/")
       } catch (error) {
         // without error handling
       }
     }
   }
-};
+}
 </script>

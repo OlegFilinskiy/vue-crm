@@ -63,7 +63,6 @@
 
 <script>
 import {required, minValue} from 'vuelidate/lib/validators'
-import { async } from 'q'
 
 export default {
   props: {
@@ -97,8 +96,8 @@ export default {
     this.limit = limit
   },
   mounted() {
-    this.select = M.FormSelect.init(this.$refs.select) // to initialize select
-    M.updateTextFields() // to reinitialize all labels for dynamically adding inputs
+    this.select = window.M.FormSelect.init(this.$refs.select) // to initialize select
+    window.M.updateTextFields() // to reinitialize all labels for dynamically adding inputs
   },
   methods: {
     async submitHandler() {

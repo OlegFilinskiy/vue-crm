@@ -60,7 +60,7 @@ export default {
     limit: {minValue: minValue(100)} // indicate min value
   },
   mounted() {
-    M.updateTextFields() // to reinitialize all labels for dynamically adding inputs
+    window.M.updateTextFields() // to reinitialize all labels for dynamically adding inputs
   },
   methods: {
     async submitHandler() {

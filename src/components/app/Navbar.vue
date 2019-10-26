@@ -6,6 +6,9 @@
           <i class="material-icons black-text">dehaze</i>
         </a>
         <!-- if you need date only, pass to the filter 'date' -->
+      </div>
+
+      <div class="date">
         <span class="black-text">{{ date | date('datetime') }}</span>
       </div>
 
@@ -77,3 +80,17 @@
     }
   };
 </script>
+
+<style lang="sass">
+  .date
+    box-shadow: inset 0px 0px 9px 2px rgba(0,0,0,0.45)
+    padding: 5px 15px
+    height: 40px
+    margin-left: 20px
+    margin-right: 20px
+
+    span 
+      line-height: 30px
+      display: block
+  
+</style>
