@@ -2,7 +2,12 @@ import firebase from 'firebase/app'
 
 export default {
   actions: {
-    async login({commit}, {email, password}) {
+    async login({
+      commit
+    }, {
+      email,
+      password
+    }) {
       try {
         await firebase.auth().signInWithEmailAndPassword(email, password) // async method (return promise)
       } catch (error) {
@@ -10,11 +15,20 @@ export default {
         throw error
       }
     },
-    async logout({commit}) {
+    async logout({
+      commit
+    }) {
       await firebase.auth().signOut() // async method (return promise)
       commit('clearInfo') // sync action (mutation)
     },
-    async register({dispatch, commit}, {email, password, name}) {
+    async register({
+      dispatch,
+      commit
+    }, {
+      email,
+      password,
+      name
+    }) {
       try {
         await firebase.auth().createUserWithEmailAndPassword(email, password) // async method (return promise)
         const uid = await dispatch('getUid') // take user id in promise

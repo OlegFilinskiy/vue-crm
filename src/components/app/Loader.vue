@@ -27,3 +27,11 @@ export default {
   }
 }
 </script>
+
+<style lang="sass">
+  .app-loader
+    min-height: 70vh
+    display: flex
+    align-items: center
+    justify-content: center
+</style>

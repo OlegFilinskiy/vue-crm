@@ -5,7 +5,7 @@ import store from "./store"
 import dateFilter from "@/filters/date.filter"
 import currencyFilter from '@/filters/currency.filter'
 import messagePlugin from "@/utils/message.plugin"
-import Loader from "@/components/app/Loader";
+import Loader from "@/components/app/Loader"
 import Vuelidate from "vuelidate"
 import "./registerServiceWorker"
 import "materialize-css/dist/js/materialize.min"
@@ -18,7 +18,7 @@ Vue.config.productionTip = false
 
 Vue.use(messagePlugin)
 Vue.use(Vuelidate)
-Vue.filter("date", dateFilter)  // Registration of filter
+Vue.filter("date", dateFilter) // Registration of filter
 Vue.filter("currency", currencyFilter) // Registration of filter
 Vue.component('Loader', Loader) // Global registration of component
 
@@ -33,7 +33,7 @@ firebase.initializeApp({
   measurementId: "G-NT09LN1DSV"
 })
 
-let app 
+let app
 
 firebase.auth().onAuthStateChanged(() => { // if firabse can Auth, we init Vue
   if (!app) { // for not duplicating app
