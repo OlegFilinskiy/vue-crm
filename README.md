@@ -1,5 +1,15 @@
 # vue-crm
 
+## This application is for financial planning, control and cost accounting.
+### This app uses Vue, Vuex, Firebase, Materialize.css
+
+### Preview:
+![Screenshot of example](https://github.com/OlegFilinskiy/vue-crm/raw/master/src/assets/screenshot_1.png)
+
+![Screenshot of example](https://github.com/OlegFilinskiy/vue-crm/raw/master/src/assets/screenshot_2.png)
+
+![Screenshot of example](https://github.com/OlegFilinskiy/vue-crm/raw/master/src/assets/screenshot_3.png)
+
 ## Project setup
 ```
 npm install
