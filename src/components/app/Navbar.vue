@@ -1,5 +1,5 @@
 <template name="component-name">
-  <nav class="navbar orange lighten-1">
+  <nav class="navbar orange lighten-2">
     <div class="nav-wrapper">
       <div class="navbar-left">
         <a href="#" @click.prevent="$emit('burgerClick')">
@@ -8,7 +8,7 @@
         <!-- if you need date only, pass to the filter 'date' -->
       </div>
 
-      <div class="date">
+      <div class="date orange lighten-3">
         <span class="black-text">{{ date | date('datetime') }}</span>
       </div>
 
@@ -83,11 +83,12 @@
 
 <style lang="sass">
   .date
-    box-shadow: inset 0px 0px 9px 2px rgba(0,0,0,0.45)
+    box-shadow: inset 0px 0px 8px 1px rgba(0,0,0,0.4)
     padding: 5px 15px
     height: 40px
     margin-left: 20px
     margin-right: 20px
+    border-radius: 2px;
 
     span 
       line-height: 30px
