@@ -20,7 +20,7 @@
           <strong>{{cat.title}}</strong>
           {{cat.spend | currency('UAH')}} из {{cat.limit | currency('UAH')}}
         </p>
-        <div class="progress" >
+        <div class="progress" v-tooltip="cat.tooltip">
           <div
             class="determinate"
             :class="[cat.progressColor]"
@@ -33,7 +33,9 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from "vuex"
+import currencyFilter from "@/filters/currency.filter"
+
 export default {
   name: 'planning', 
   data: () => ({
@@ -63,11 +65,15 @@ export default {
           ? 'yellow'
           : 'red'
 
+      const tooltipValue = cat.limit - spend
+      const tooltip = `${tooltipValue < 0 ? 'Превышение на' : 'Осталось'} ${currencyFilter(Math.abs(tooltipValue))}`
+
       return {
         ...cat,
         progressPercent,
         progressColor,
-        spend
+        spend,
+        tooltip
       }
     })
 
@@ -75,3 +81,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  .progress {
+    height: 6px;
+  }
+</style>
