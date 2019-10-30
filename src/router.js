@@ -38,7 +38,7 @@ const router = new Router({
       component: () => import("./views/History.vue")
     },
     {
-      path: "/detail-record",
+      path: "/detail-record/:id",
       name: "detail-record",
       meta: { layout: "main", auth: true },
       component: () => import("./views/DetailRecord.vue")
