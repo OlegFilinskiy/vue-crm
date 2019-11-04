@@ -1,5 +1,5 @@
 export default {
-  bind(el, {value}) {
+  bind(el, {value}) {  // input parameter - "string"
     window.M.Tooltip.init(el, {html: value})  // init tooltips from Materialize.css
   },
   unbind(el) {  // this method like destroy
