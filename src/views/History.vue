@@ -67,3 +67,11 @@
     }
   }
 </script>
+
+<style lang="scss" scoped>
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>

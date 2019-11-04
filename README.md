@@ -10,11 +10,14 @@
 #### password: 123456
 
 ### Preview application:
+##### Account page
 ![Screenshot of example](https://github.com/OlegFilinskiy/vue-crm/raw/master/src/assets/screenshot_1.png)
-
+##### Planning page
 ![Screenshot of example](https://github.com/OlegFilinskiy/vue-crm/raw/master/src/assets/screenshot_2.png)
-
+##### Category page
 ![Screenshot of example](https://github.com/OlegFilinskiy/vue-crm/raw/master/src/assets/screenshot_3.png)
+##### History page
+![Screenshot of example](https://github.com/OlegFilinskiy/vue-crm/raw/master/src/assets/screenshot_4.png)
 
 ## Project setup
 ```
