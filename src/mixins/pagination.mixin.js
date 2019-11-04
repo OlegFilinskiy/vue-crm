@@ -3,7 +3,7 @@ import _ from 'lodash'
 export default {
   data() {
     return {
-      page: 1, // default page for display
+      page: +this.$route.query.page || 1, // setup default page for display or from query parameter
       pageSize: 5,
       pageCount: 0,
       allItems: [], // all items for display
@@ -17,6 +17,7 @@ export default {
       this.items = this.allItems[this.page - 1] || this.allItems[0] // current items for display, '-1' because array start from 0
     },
     pageChangeHandler(page) {
+      this.$router.push(`${this.$route.path}?page=${page}`) // add query parameter to route
       this.items = this.allItems[page - 1] || this.allItems[0]
     }
   }

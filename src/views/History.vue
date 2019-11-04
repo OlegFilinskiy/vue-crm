@@ -20,7 +20,9 @@
       <HistoryTable :records="items" />
 
       <!--'pagination' and 'waves-effect' - classes from Materialize.css-->
+      <!--page, pageCount, pageChangeHandler from paginationMixin-->
       <Paginate
+        v-model="page"
         :page-count="pageCount"
         :click-handler="pageChangeHandler"
         :prev-text="'Назад'"
