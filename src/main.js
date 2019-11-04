@@ -2,6 +2,7 @@ import Vue from "vue"
 import App from "./App.vue"
 import router from "./router"
 import store from "./store"
+import Paginate from 'vuejs-paginate'
 import dateFilter from "@/filters/date.filter"
 import currencyFilter from '@/filters/currency.filter'
 import tooltipDirective from "@/directives/tooltip.directive"
@@ -23,6 +24,7 @@ Vue.filter("date", dateFilter) // Registration of filter
 Vue.filter("currency", currencyFilter) // Registration of filter
 Vue.directive("tooltip", tooltipDirective) // Registration own directive 'tooltip'
 Vue.component('Loader', Loader) // Global registration of component
+Vue.component('Paginate', Paginate)
 
 firebase.initializeApp({
   apiKey: "AIzaSyCyZ6qDSOpnljjMQ1p4tNMilQrETabRc3g",
