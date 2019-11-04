@@ -1,9 +1,15 @@
 # vue-crm
 
-## This application is for financial planning, control and cost accounting.
+## This is an application for financial planning, control and cost accounting.
+
 ### This app uses Vue, Vuex, Firebase, Materialize.css
 
-### Preview:
+### You can create your personal Account by simple registration or use a demo account to explore the application.
+### Demo account:
+#### login: test@test.ua
+#### password: 123456
+
+### Preview application:
 ![Screenshot of example](https://github.com/OlegFilinskiy/vue-crm/raw/master/src/assets/screenshot_1.png)
 
 ![Screenshot of example](https://github.com/OlegFilinskiy/vue-crm/raw/master/src/assets/screenshot_2.png)
