@@ -69,7 +69,7 @@ export default {
     categories: {  // check insert data
       type: Array,
       required: true,
-      default: []
+      // default: []
     }
   },
   data: () => ({

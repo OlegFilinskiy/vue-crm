@@ -38,7 +38,7 @@ export default {
   }),
   async mounted() {
     if (!Object.keys(this.$store.getters.info).length) { // check if object empty
-      await this.$store.dispatch('fetchinfo')
+      await this.$store.dispatch('fetchInfo')
     }
 
     this.loading = false

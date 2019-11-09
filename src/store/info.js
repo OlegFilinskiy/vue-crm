@@ -13,7 +13,7 @@ export default {
     }
   },
   actions: {
-    async updateinfo({ dispatch, commit, getters }, toUpdate) {
+    async updateInfo({ dispatch, commit, getters }, toUpdate) {
       try {
         const uid = await dispatch('getUid')
         const updateData = {...getters.info, ...toUpdate} // concat info data with toUpdate
@@ -24,7 +24,7 @@ export default {
         throw error
       }
     },
-    async fetchinfo({dispatch, commit}) {
+    async fetchInfo({dispatch, commit}) {
       try {
         const uid = await dispatch('getUid')
         const infoFB = await firebase.database().ref(`/users/${uid}/info`).once('value') // return object
