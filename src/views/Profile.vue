@@ -24,10 +24,10 @@
       <!-- Switch -->
       <div class="switch">
         <label>
-          Русский
-          <input type="checkbox">
-          <span class="lever"></span>
           English
+          <input type="checkbox" v-model="isRuLocale">
+          <span class="lever"></span>
+          Русский
         </label>
       </div>
 
@@ -42,16 +42,20 @@
 <script>
   import { mapGetters, mapActions } from 'vuex'
   import { required } from "vuelidate/lib/validators"
+  import messages from "@/utils/messages"
 
   export default {
     data: () => ({
-      name: ''
+      name: '',
+      isRuLocale: true
     }),
     validations: {
       name: { required }
     },
     mounted() {
       this.name = this.info.name
+
+      this.isRuLocale = this.info.locale === 'ru-Ru'
 
       setTimeout(() => { // life hack for plugin init
         window.M.updateTextFields()
@@ -68,14 +72,16 @@
           return
         }
 
-        const formData = {
-          name: this.name
-        }
-
         try {
           await this.updateInfo({
-            name: this.name
+            name: this.name,
+            locale: this.isRuLocale ? 'ru-Ru' : 'en-Us'
           })
+
+          if (messages['updateInfo']) {
+            // check, if our messages has this key
+            this.$message(messages['updateInfo']) // show message from url query parameters
+          }
         } catch (error) {}
 
       }
