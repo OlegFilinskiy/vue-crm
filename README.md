@@ -5,11 +5,14 @@
 ### This app uses Vue, Vuex, Firebase, Materialize.css
 
 ### You can create your personal Account by simple registration or use a demo account to explore the application.
-### Demo account:
-#### login: test@test.ua
-#### password: 123456
 
 ### Application deployed on Firebase hosting by url: https://vue-crm-fb.web.app/
+
+### Demo account:
+```
+login: test@test.ua
+password: 123456
+```
 
 ``` *Note: Application use 'data.fixer.io/api' resource for the exchange rate. Due to the fact that this resource does not have a SSL certificate and uses http, Firebase does not allow a request to unsafe domains. For this reason the Home page does not work.```
 
