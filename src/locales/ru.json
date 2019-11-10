@@ -2,5 +2,10 @@
   "ProfileTitle": "Профиль",
   "ProfileName": "Имя",
   "ProfileMessageName": "Введите имя",
-  "ButtonUpdate": "Обновить"
+  "ButtonUpdate": "Обновить",
+  "SidebarBill": "Счет",
+  "SidebarHistory": "История",
+  "SidebarPlanning": "Планирование",
+  "SidebarRecord": "Новая запись",
+  "SidebarCategory": "Категории"
 }

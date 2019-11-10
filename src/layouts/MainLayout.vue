@@ -4,7 +4,7 @@
     <div v-else class="app-main-layout">
       <Navbar @burgerClick="isOpen = !isOpen" />
 
-      <Sidebar :open="isOpen" />
+      <Sidebar :open="isOpen" :key="locale" />
 
       <main class="app-content" :class="{full: !isOpen}">
         <div class="app-page">
@@ -50,11 +50,17 @@ export default {
   computed: {
     error() {
       return this.$store.getters.error
+    },
+    locale() {
+      return this.$store.getters.info.locale
     }
   },
   watch: {
     error(fbError) {
       this.$error(messages[fbError.code] || 'Что-то пошло не так') // this is message from message.plugin
+    },
+    locale() { // watch for rerender sidebar after change locale
+      console.log('Locale changed')
     }
   }
 };
