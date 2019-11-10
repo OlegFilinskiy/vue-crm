@@ -14,10 +14,10 @@ login: test@test.ua
 password: 123456
 ```
 
-``` *Note: Application use 'data.fixer.io/api' resource for the exchange rate. Due to the fact that this resource does not have a SSL certificate and uses http, Firebase does not allow a request to unsafe domains. For this reason the Home page does not work.```
+``` *Note: Application use 'data.fixer.io/api' resource for the exchange rate. Due to the fact that this resource does not have a SSL certificate and uses http, Firebase does not allow a request to unsafe domains. For this reason the Account page (Home) does not work.```
 
 ### Preview application:
-##### Account page
+##### Account page (Home)
 ![Screenshot of example](https://github.com/OlegFilinskiy/vue-crm/raw/master/src/assets/screenshot_1.png)
 ##### Planning page
 ![Screenshot of example](https://github.com/OlegFilinskiy/vue-crm/raw/master/src/assets/screenshot_2.png)
