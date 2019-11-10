@@ -51,6 +51,9 @@
   "CategoryEditNameMessage": "Enter name",
   "CategoryEditLimitLabel": "Limit",
   "CategoryEditLimitMessage": "Min value",
+  "DetailRecordTitle": "History",
+  "DetailRecordMessageRecord": "Record",
+  "DetailRecordMessageNotFound": "not found",
   "ButtonCreate": "Create",
   "ButtonUpdate": "Update"
 }

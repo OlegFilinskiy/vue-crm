@@ -4,7 +4,7 @@
   
     <div v-else-if="record">
       <div class="breadcrumb-wrap">
-        <router-link to="/history" class="breadcrumb">История</router-link>
+        <router-link to="/history" class="breadcrumb"> {{'DetailRecordTitle'|localize}}</router-link>
         <a 
           @click.prevent
           class="breadcrumb"
@@ -34,7 +34,7 @@
     </div>
 
     <p class="center" v-else>
-      Запись с id = "{{$route.params.id}}" не найдена
+      {{'DetailRecordMessageRecord'|localize}} id = "{{$route.params.id}}" {{'DetailRecordMessageNotFound'|localize}}
     </p>
   </div>
 </template>

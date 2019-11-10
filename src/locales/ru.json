@@ -51,6 +51,9 @@
   "CategoryEditNameMessage": "Введите название",
   "CategoryEditLimitLabel": "Лимит",
   "CategoryEditLimitMessage": "Минимальное значение",
+  "DetailRecordTitle": "История",
+  "DetailRecordMessageRecord": " Запись с",
+  "DetailRecordMessageNotFound": "не найдена",
   "ButtonCreate": "Создать",
   "ButtonUpdate": "Обновить"
 }
