@@ -54,6 +54,16 @@
   "DetailRecordTitle": "History",
   "DetailRecordMessageRecord": "Record",
   "DetailRecordMessageNotFound": "not found",
+  "LoginTitle": "Home accounting",
+  "LoginEmailMessageEmpty": "Email field must not be empty",
+  "LoginEmailMessageCorrect": "Enter a valid Email",
+  "LoginPasswordLabel": "Password",
+  "LoginPasswordMessageEmpty": "Enter password",
+  "LoginPasswordMessageMust": "Password must be",
+  "LoginPasswordMessageSymbol": "Characters. Now it",
+  "LoginMessageAccount": "No account?",
+  "LoginMessageLink": "Sign up",
+  "ButtonEnter": "Enter",
   "ButtonCreate": "Create",
   "ButtonUpdate": "Update"
 }

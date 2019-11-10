@@ -54,6 +54,16 @@
   "DetailRecordTitle": "История",
   "DetailRecordMessageRecord": " Запись с",
   "DetailRecordMessageNotFound": "не найдена",
+  "LoginTitle": "Домашняя бухгалтерия",
+  "LoginEmailMessageEmpty": "Поле Email не должно быть пустым",
+  "LoginEmailMessageCorrect": "Введите корректный Email",
+  "LoginPasswordLabel": "Пароль",
+  "LoginPasswordMessageEmpty": "Введите пароль",
+  "LoginPasswordMessageMust": "Пароль должен быть",
+  "LoginPasswordMessageSymbol": "Символов. Сейчас он",
+  "LoginMessageAccount": "Нет аккаунта?",
+  "LoginMessageLink": "Зарегистрироваться",
+  "ButtonEnter": "Войти",
   "ButtonCreate": "Создать",
   "ButtonUpdate": "Обновить"
 }
