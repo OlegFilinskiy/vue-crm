@@ -1,7 +1,7 @@
 <template>
   <form class="card auth-card" @submit.prevent="submitHandler">
     <div class="card-content">
-      <span class="card-title">Домашняя бухгалтерия</span>
+      <span class="card-title">{{'RegisterTitle'|localize}}</span>
       <div class="input-field">
         <input
           id="email"
@@ -13,11 +13,11 @@
         <small 
           class="helper-text invalid"
           v-if="$v.email.$dirty && !$v.email.required"
-        >Поле Email не должно быть пустым</small>
+        >{{'RegisterEmailMessageEmpty'|localize}}</small>
         <small 
           class="helper-text invalid"
           v-else-if="$v.email.$dirty && !$v.email.email"
-        >Введите корректный Email</small>
+        >{{'RegisterEmailMessageCorrect'|localize}}</small>
       </div>
       <div class="input-field">
         <input
@@ -26,15 +26,15 @@
           v-model.trim="password"
           :class="{invalid: ($v.password.$dirty && !$v.password.required) || ($v.password.$dirty && !$v.password.minLength)}"
         >
-        <label for="password">Пароль</label>
+        <label for="password">{{'RegisterPasswordLabel'|localize}}</label>
         <small 
           class="helper-text invalid"
           v-if="$v.password.$dirty && !$v.password.required"
-        >Введите пароль</small>
+        >{{'RegisterPasswordMessageEmpty'|localize}}</small>
         <small 
           class="helper-text invalid"
           v-else-if="$v.password.$dirty && !$v.password.minLength"
-        >Пароль должен быть {{$v.password.$params.minLength.min}} Символов. Сейчас он {{password.length}}</small>
+        >{{'RegisterPasswordMessageMust'|localize}} {{$v.password.$params.minLength.min}} С{{'RegisterPasswordMessageSymbol'|localize}} {{password.length}}</small>
       </div>
       <div class="input-field">
         <input
@@ -43,11 +43,11 @@
           v-model="name"
           :class="{invalid: $v.name.$dirty && !$v.name.required}"
         >
-        <label for="name">Имя</label>
+        <label for="name">{{'RegisterNameLabel'|localize}}</label>
         <small 
           class="helper-text invalid"
           v-if="$v.name.$dirty && !$v.name.required"
-        >Введите имя</small>
+        >{{'RegisterNameMessage'|localize}}</small>
       </div>
       <p>
         <label>
@@ -56,13 +56,13 @@
             v-model="agree"
             :class="{invalid: $v.name.$dirty && !agree}"
           />
-          <span>С правилами согласен</span>
+          <span>{{'RegisterRulesAgree'|localize}}</span>
         </label>
       </p>
       <small 
         class="helper-text invalid"
         v-if="$v.name.$dirty && !agree"
-      >Согласитесь с условиями</small>
+      >{{'RegisterRulesMessage'|localize}}</small>
     </div>
     <div class="card-action">
       <div>
@@ -70,13 +70,13 @@
           class="btn waves-effect waves-light auth-submit"
           type="submit"
         >
-          Зарегистрироваться
+          {{'ButtonRegister'|localize}}
           <i class="material-icons right">send</i>
         </button>
       </div>
       <p class="center">
-        Уже есть аккаунт?
-        <router-link to="/login">Войти!</router-link>
+        {{'RegisterAlreadyAccount'|localize}}
+        <router-link to="/login">{{'ButtonEnter'|localize}}!</router-link>
       </p>
     </div>
   </form>
