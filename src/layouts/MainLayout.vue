@@ -51,16 +51,13 @@ export default {
     error() {
       return this.$store.getters.error
     },
-    locale() {
+    locale() { // for watch rerender sidebar after change locale
       return this.$store.getters.info.locale
     }
   },
   watch: {
     error(fbError) {
       this.$error(messages[fbError.code] || 'Что-то пошло не так') // this is message from message.plugin
-    },
-    locale() { // watch for rerender sidebar after change locale
-      console.log('Locale changed')
     }
   }
 };

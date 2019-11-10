@@ -2,7 +2,6 @@
   "ProfileTitle": "Profile",
   "ProfileName": "Name",
   "ProfileMessageName": "Enter name",
-  "ButtonUpdate": "Update",
   "SidebarBill": "Bill",
   "SidebarHistory": "History",
   "SidebarPlanning": "Planning",
@@ -15,5 +14,16 @@
   "HomeCurrencyTitle": "Exchange Rates",
   "HomeCurrencyTableCurrency": "Currency",
   "HomeCurrencyTableRate": "Rate",
-  "HomeCurrencyTableDate": "Date"
+  "HomeCurrencyTableDate": "Date",
+  "HistoryTitle": "Record History",
+  "HistoryEmptyRecord": "No Records Yet",
+  "HistoryAddRecordLink": "Add Record",
+  "HistoryPrevText": "Prev",
+  "HistoryNextText": "Next",
+  "HistoryTableAmount": "Amount",
+  "HistoryTableDate": "Date",
+  "HistoryTableCategory": "Category",
+  "HistoryTableType": "Type",
+  "HistoryTableOpen": "Open",
+  "ButtonUpdate": "Update"
 }

@@ -2,7 +2,6 @@
   "ProfileTitle": "Профиль",
   "ProfileName": "Имя",
   "ProfileMessageName": "Введите имя",
-  "ButtonUpdate": "Обновить",
   "SidebarBill": "Счет",
   "SidebarHistory": "История",
   "SidebarPlanning": "Планирование",
@@ -15,5 +14,16 @@
   "HomeCurrencyTitle": "Курс валют",
   "HomeCurrencyTableCurrency": "Курс валют",
   "HomeCurrencyTableRate": "Курс валют",
-  "HomeCurrencyTableDate": "Курс валют"
+  "HomeCurrencyTableDate": "Курс валют",
+  "HistoryTitle": "История записей",
+  "HistoryEmptyRecord": "Записей пока нет",
+  "HistoryAddRecordLink": "Добавить запись",
+  "HistoryPrevText": "Назад",
+  "HistoryNextText": "Вперед",
+  "HistoryTableAmount": "Сумма",
+  "HistoryTableDate": "Дата",
+  "HistoryTableCategory": "Категория",
+  "HistoryTableType": "Тип",
+  "HistoryTableOpen": "Открыть",
+  "ButtonUpdate": "Обновить"
 }
