@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="page-title">
-      <h3>{{'ProfileTitle' | localize}}</h3>
+      <h3>{{'ProfileTitle'|localize}}</h3>
     </div>
 
     <form class="form" @submit.prevent="submitHandler">
@@ -12,12 +12,12 @@
           v-model="name"
           :class="{invalid: $v.name.$dirty && !$v.name.required}"
         >
-        <label for="description">Имя</label>
+        <label for="description">{{'ProfileName'|localize}}</label>
         <small
           v-if="$v.name.$dirty && !$v.name.required"
           class="helper-text invalid"
         >
-          Введите имя
+          {{'ProfileMessageName'|localize}}
         </small>
       </div>
 
@@ -32,7 +32,7 @@
       </div>
 
       <button class="btn waves-effect waves-light" type="submit">
-        Обновить
+        {{'ButtonUpdate'|localize}}
         <i class="material-icons right">send</i>
       </button>
     </form>
@@ -72,15 +72,17 @@
           return
         }
 
+        const locale = this.isRuLocale ? 'ru-Ru' : 'en-Us'
+
         try {
           await this.updateInfo({
             name: this.name,
-            locale: this.isRuLocale ? 'ru-Ru' : 'en-Us'
+            locale: locale
           })
 
-          if (messages['updateInfo']) {
+          if (messages[`updateInfo-${locale}`]) {
             // check, if our messages has this key
-            this.$message(messages['updateInfo']) // show message from url query parameters
+            this.$message(messages[`updateInfo-${locale}`]) // show message from url query parameters
           }
         } catch (error) {}
 

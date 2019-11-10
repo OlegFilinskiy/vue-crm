@@ -1,3 +1,6 @@
 {
-  "ProfileTitle": "Профиль"
+  "ProfileTitle": "Профиль",
+  "ProfileName": "Имя",
+  "ProfileMessageName": "Введите имя",
+  "ButtonUpdate": "Обновить"
 }

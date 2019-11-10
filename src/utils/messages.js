@@ -4,5 +4,6 @@ export default {
   'auth/user-not-found': 'Пользователя с таким email не существует',
   'auth/wrong-password': 'Неверный пароль',
   'auth/email-already-in-use': 'Email уже занят',
-  'updateInfo': 'Данные успешно обновлены'
+  'updateInfo-ru-Ru': 'Данные успешно обновлены',
+  'updateInfo-en-Us': 'Data updated successfully'
 }

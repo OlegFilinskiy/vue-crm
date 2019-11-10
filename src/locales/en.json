@@ -1,3 +1,6 @@
 {
-  "ProfileTitle": "Profile"
+  "ProfileTitle": "Profile",
+  "ProfileName": "Name",
+  "ProfileMessageName": "Enter name",
+  "ButtonUpdate": "Update"
 }
