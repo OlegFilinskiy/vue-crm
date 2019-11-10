@@ -9,5 +9,11 @@
   "SidebarRecord": "Новая запись",
   "SidebarCategory": "Категории",
   "NavbarProfile": "Профиль",
-  "NavbarLogout": "Выйти"
+  "NavbarLogout": "Выйти",
+  "HomeTitle": "Счет",
+  "HomeBillTitle": "Счет в валюте",
+  "HomeCurrencyTitle": "Курс валют",
+  "HomeCurrencyTableCurrency": "Курс валют",
+  "HomeCurrencyTableRate": "Курс валют",
+  "HomeCurrencyTableDate": "Курс валют"
 }

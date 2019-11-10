@@ -9,5 +9,11 @@
   "SidebarRecord": "New Record",
   "SidebarCategory": "Category",
   "NavbarProfile": "Profile",
-  "NavbarLogout": "Logout"
+  "NavbarLogout": "Logout",
+  "HomeTitle": "Bill",
+  "HomeBillTitle": "Currency Account",
+  "HomeCurrencyTitle": "Exchange Rates",
+  "HomeCurrencyTableCurrency": "Currency",
+  "HomeCurrencyTableRate": "Rate",
+  "HomeCurrencyTableDate": "Date"
 }
