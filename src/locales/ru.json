@@ -28,5 +28,16 @@
   "PlanningTitle": "Планирование",
   "PlanningEmptyRecord": "Записей пока нет",
   "PlanningAddRecordLink": "Добавить запись",
+  "RecordTitle": "Новая запись",
+  "RecordEmptyRecord": "Записей пока нет",
+  "RecordAddRecordLink": "Добавить запись",
+  "RecordSelectLabel": "Выберите категорию",
+  "RecordRadioIncome": "Доход",
+  "RecordRadioOutcome": "Расход",
+  "RecordAmountLabel": "Сумма",
+  "RecordAmountMin": "Минимальное значение",
+  "RecordDescriptionLabel": "Описание",
+  "RecordDescriptionMessage": "Введите описание",
+  "ButtonCreate": "Создать",
   "ButtonUpdate": "Обновить"
 }

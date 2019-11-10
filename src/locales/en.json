@@ -28,5 +28,16 @@
   "PlanningTitle": "Planning",
   "PlanningEmptyRecord": "No Records Yet",
   "PlanningAddRecordLink": "Add Record",
+  "RecordTitle": "New Record",
+  "RecordEmptyRecord": "No Records Yet",
+  "RecordAddRecordLink": "Add Record",
+  "RecordSelectLabel": "Choose category",
+  "RecordRadioIncome": "Income",
+  "RecordRadioOutcome": "Outcome",
+  "RecordAmountLabel": "Amount",
+  "RecordAmountMin": "Min value",
+  "RecordDescriptionLabel": "Description",
+  "RecordDescriptionMessage": "Enter description",
+  "ButtonCreate": "Create",
   "ButtonUpdate": "Update"
 }
