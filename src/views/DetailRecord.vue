@@ -10,6 +10,7 @@
           class="breadcrumb"
         >
           {{ record.type === 'income' ? 'Доход' : 'Расход' }}
+          <!--{{ record.type === 'income' ? 'Income' : 'Outcome' | localize }}-->
         </a>
       </div>
       <div class="row">
@@ -42,6 +43,11 @@
 <script>
 export default {
   name: 'detailRecord',
+  metaInfo() { // need func for rerender
+    return {
+      title: this.$title('DetailRecordTitle')
+    }
+  },
   data: () => ({
     record: null,
     loading: true

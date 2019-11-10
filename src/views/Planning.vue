@@ -19,7 +19,7 @@
       >
         <p>
           <strong>{{cat.title}}</strong>
-          {{cat.spend | currency('UAH')}} из {{cat.limit | currency('UAH')}}
+          {{cat.spend | currency('UAH')}} {{'PlanningOf'|localize}} {{cat.limit | currency('UAH')}}
         </p>
         <div class="progress" v-tooltip="cat.tooltip">
           <div
@@ -38,7 +38,12 @@ import { mapGetters } from "vuex"
 import currencyFilter from "@/filters/currency.filter"
 
 export default {
-  name: 'planning', 
+  name: 'planning',
+  metaInfo() { // need func for rerender
+    return {
+      title: this.$title('PlanningTitle')
+    }
+  },
   data: () => ({
     loading: true,
     categories: []

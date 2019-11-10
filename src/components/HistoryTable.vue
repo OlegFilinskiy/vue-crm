@@ -29,7 +29,7 @@
         <button
           class="btn-small btn"
           @click="openRecord(record.id)"
-          v-tooltip="'Посмотреть запись'"
+          v-tooltip="'OpenRecord'"
         >
           <i class="material-icons">open_in_new</i>
         </button>

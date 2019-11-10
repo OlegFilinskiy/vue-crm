@@ -28,6 +28,7 @@
   "PlanningTitle": "Planning",
   "PlanningEmptyRecord": "No Records Yet",
   "PlanningAddRecordLink": "Add Record",
+  "PlanningOf": "of",
   "RecordTitle": "New Record",
   "RecordEmptyRecord": "No Records Yet",
   "RecordAddRecordLink": "Add Record",
@@ -78,5 +79,18 @@
   "ButtonRegister": "Sign up",
   "ButtonEnter": "Enter",
   "ButtonCreate": "Create",
-  "ButtonUpdate": "Update"
+  "ButtonUpdate": "Update",
+  "Error": "Error",
+  "TooltipAddNew": "Create new record",
+  "MessageLogout": "You are logged out",
+  "MessageLogin": "Log in to get started",
+  "MessageEmailNotFound": "User with such email does not exist",
+  "MessageWrongPassword": "Wrong password",
+  "MessageEmailAlreadyInUse": "User with such email does not exist.",
+  "MessageDataUpdate": "Data updated successfully",
+  "Income": "Income",
+  "Outcome": "Outcome",
+  "CostsForCategories": "Costs by Category",
+  "CreateNewRecord": "Create new record",
+  "OpenRecord": "Open record"
 }

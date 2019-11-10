@@ -39,9 +39,15 @@
   import paginationMixin from '@/mixins/pagination.mixin' // include fields: page, pageSize, pageCount, allItems, items, setupPagination
   import HistoryTable from '@/components/HistoryTable'
   import { Pie } from 'vue-chartjs'
+  import localizeFilter from '@/filters/localize.filter'
 
   export default {
     name: 'history',
+    metaInfo() { // need func for rerender
+      return {
+        title: this.$title('HistoryTitle')
+      }
+    },
     extends: Pie, // renderChart method
     mixins: [paginationMixin], // setupPagination method
     data: () => ({
@@ -57,7 +63,7 @@
       this.renderChart({
         labels: categories.map(cat => cat.title),
         datasets: [{
-          label: 'Расходы по категориям',
+          label: localizeFilter('CostsForCategories'),
           data: categories.map(cat => {
             return this.records.reduce((total, rec) => { // iterate over records related costs in this category, and summarize them
               if (rec.categoryId === cat.id && rec.type === 'outcome') {
@@ -95,7 +101,9 @@
             ...record,
             categoryName: categories.find(cat => cat.id === record.categoryId).title,  // find category title
             typeClass: record.type === 'income' ? 'green' : 'red',
-            typeText: record.type === 'income' ? 'Доход' : 'Расход',
+            typeText: record.type === 'income'
+              ? localizeFilter('Income')
+              : localizeFilter('Outcome'),
           }
         })
 

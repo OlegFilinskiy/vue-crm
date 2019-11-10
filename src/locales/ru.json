@@ -28,6 +28,7 @@
   "PlanningTitle": "Планирование",
   "PlanningEmptyRecord": "Записей пока нет",
   "PlanningAddRecordLink": "Добавить запись",
+  "PlanningOf": "из",
   "RecordTitle": "Новая запись",
   "RecordEmptyRecord": "Записей пока нет",
   "RecordAddRecordLink": "Добавить запись",
@@ -78,5 +79,18 @@
   "ButtonRegister": "Зарегистрироваться",
   "ButtonEnter": "Войти",
   "ButtonCreate": "Создать",
-  "ButtonUpdate": "Обновить"
+  "ButtonUpdate": "Обновить",
+  "Error": "Ошибка",
+  "TooltipAddNew": "Создать новую запись",
+  "MessageLogout": "Вы вышли из системы",
+  "MessageLogin": "Для начала войдите в систему",
+  "MessageEmailNotFound": "Пользователя с таким email не существует",
+  "MessageWrongPassword": "Неверный пароль",
+  "MessageEmailAlreadyInUse": "'Пользователя с таким email не существует",
+  "MessageDataUpdate": "Данные успешно обновлены",
+  "Income": "Доход",
+  "Outcome": "Расход",
+  "CostsForCategories": "Расходы по категориям",
+  "CreateNewRecord": "Создать новую запись",
+  "OpenRecord": "Посмотреть запись"
 }

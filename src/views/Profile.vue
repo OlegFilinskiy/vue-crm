@@ -46,9 +46,9 @@
   import localizeFilter from '@/filters/localize.filter'
 
   export default {
-    metaInfo() {
+    metaInfo() { // need func for rerender
       return {
-        title: localizeFilter('ProfileTitle')
+        title: this.$title('ProfileTitle')
       }
     },
     data: () => ({
@@ -86,9 +86,9 @@
             locale: locale
           })
 
-          if (messages[`updateInfo-${locale}`]) {
+          if (messages['updateInfo']) {
             // check, if our messages has this key
-            this.$message(messages[`updateInfo-${locale}`]) // show message from url query parameters
+            this.$message(messages['updateInfo']) // show message from url query parameters
           }
         } catch (error) {}
 
