@@ -1,0 +1,1 @@
+input[type=checkbox].invalid+span:before{border-color:red}
