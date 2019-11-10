@@ -1,14 +1,15 @@
 <template>
   <div>
     <div class="page-title">
-      <h3>Планирование</h3>
+      <h3>{{'PlanningTitle'|localize}}</h3>
       <h4>{{ info.bill | currency('UAH')}}</h4>
     </div>
 
     <loader v-if="loading" />
 
     <p v-else-if="!categories.length" class="center-align">
-      Категорий пока нет. <router-link to="/categories" >Добавить категорию</router-link>
+      {{'PlanningEmptyRecord'|localize}}.
+      <router-link to="/categories" >{{'PlanningAddRecordLink'|localize}}</router-link>
     </p>
 
     <section v-else>

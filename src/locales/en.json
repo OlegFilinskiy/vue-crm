@@ -25,5 +25,8 @@
   "HistoryTableCategory": "Category",
   "HistoryTableType": "Type",
   "HistoryTableOpen": "Open",
+  "PlanningTitle": "Planning",
+  "PlanningEmptyRecord": "No Records Yet",
+  "PlanningAddRecordLink": "Add Record",
   "ButtonUpdate": "Update"
 }

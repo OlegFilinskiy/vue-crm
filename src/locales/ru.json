@@ -25,5 +25,8 @@
   "HistoryTableCategory": "Категория",
   "HistoryTableType": "Тип",
   "HistoryTableOpen": "Открыть",
+  "PlanningTitle": "Планирование",
+  "PlanningEmptyRecord": "Записей пока нет",
+  "PlanningAddRecordLink": "Добавить запись",
   "ButtonUpdate": "Обновить"
 }
