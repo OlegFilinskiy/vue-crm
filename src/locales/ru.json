@@ -7,5 +7,7 @@
   "SidebarHistory": "История",
   "SidebarPlanning": "Планирование",
   "SidebarRecord": "Новая запись",
-  "SidebarCategory": "Категории"
+  "SidebarCategory": "Категории",
+  "NavbarProfile": "Профиль",
+  "NavbarLogout": "Выйти"
 }

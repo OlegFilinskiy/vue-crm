@@ -7,5 +7,7 @@
   "SidebarHistory": "History",
   "SidebarPlanning": "Planning",
   "SidebarRecord": "New Record",
-  "SidebarCategory": "Category"
+  "SidebarCategory": "Category",
+  "NavbarProfile": "Profile",
+  "NavbarLogout": "Logout"
 }
