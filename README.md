@@ -1,14 +1,13 @@
-# vue-crm
+## vue-crm
 
-## This is multilingual application for financial planning, control and cost accounting.
+#### This is multilingual application for financial planning, control and cost accounting.
 
-### This app uses Vue, Vuex, Firebase, Materialize.css
+##### This app uses Vue, Vuex, Firebase, Materialize.css
+##
+##### You can create your personal Account by simple registration or use a demo account to explore the application.
 
-### You can create your personal Account by simple registration or use a demo account to explore the application.
-
-### Application deployed on Firebase hosting by url: https://vue-crm-fb.web.app/
-
-### Demo account:
+##### Application deployed on Firebase hosting by url: https://vue-crm-fb.web.app/
+##### Demo account:
 ```
 login: test@test.ua
 password: 123456
@@ -16,7 +15,8 @@ password: 123456
 
 ``` *Note: Application use 'data.fixer.io/api' resource for the exchange rate. Due to the fact that this resource does not have a SSL certificate and uses http, Firebase does not allow a request to unsafe domains. For this reason the Account page (Home) does not work.```
 
-### Preview application:
+##
+#### Preview application:
 ##### Account page (Home)
 ![Screenshot of example](https://github.com/OlegFilinskiy/vue-crm/raw/master/src/assets/screenshot_1.png)
 ##### Planning page
