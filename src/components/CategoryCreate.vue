@@ -49,6 +49,7 @@
 
 <script>
 import {required, minValue} from 'vuelidate/lib/validators'
+import localizeFilter from '@/filters/localize.filter'
 
 export default {
   data: () => ({
@@ -76,7 +77,7 @@ export default {
 
       try {   
         const category = await this.$store.dispatch('createCategory', formData) // await because this is async function
-        this.$message(`Категория ${this.title} успешно создана`)
+        this.$message(localizeFilter('CategoryCreateSucces'))
         this.title = ''
         this.limit = 100
         this.$v.$reset() // reset form state validations

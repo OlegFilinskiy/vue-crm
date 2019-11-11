@@ -29,6 +29,8 @@
   "PlanningEmptyRecord": "Записей пока нет",
   "PlanningAddRecordLink": "Добавить запись",
   "PlanningOf": "из",
+  "PlanningMoreThan": "Превышение на",
+  "PlanningStayed": "Осталось",
   "RecordTitle": "Новая запись",
   "RecordEmptyRecord": "Записей пока нет",
   "RecordAddRecordLink": "Добавить запись",
@@ -92,5 +94,7 @@
   "Outcome": "Расход",
   "CostsForCategories": "Расходы по категориям",
   "CreateNewRecord": "Создать новую запись",
-  "OpenRecord": "Посмотреть запись"
+  "OpenRecord": "Посмотреть запись",
+  "CategoryCreateSucces": "Категория успешно создана",
+  "CategoryUpdateSucces": "Категория успешно обновлена"
 }

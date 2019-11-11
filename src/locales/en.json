@@ -29,6 +29,8 @@
   "PlanningEmptyRecord": "No Records Yet",
   "PlanningAddRecordLink": "Add Record",
   "PlanningOf": "of",
+  "PlanningMoreThan": "Excess on",
+  "PlanningStayed": "Left",
   "RecordTitle": "New Record",
   "RecordEmptyRecord": "No Records Yet",
   "RecordAddRecordLink": "Add Record",
@@ -92,5 +94,7 @@
   "Outcome": "Outcome",
   "CostsForCategories": "Costs by Category",
   "CreateNewRecord": "Create new record",
-  "OpenRecord": "Open record"
+  "OpenRecord": "Open record",
+  "CategoryCreateSucces": "Category create successfully",
+  "CategoryUpdateSucces": "Category update successfully"
 }
